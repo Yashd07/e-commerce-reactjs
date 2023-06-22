@@ -12,7 +12,7 @@ const Home = () => {
     return (item.category === "men's clothing" || item.category === "women's clothing");
   });
 
-  console.log(filProducts);
+  //console.log(filProducts);
   return (<div>
     <section className='py-16'>
       <div className='container mx-auto'></div>
