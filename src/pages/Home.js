@@ -9,7 +9,7 @@ const Home = () => {
   //console.log(products);
 
   const filProducts = products.filter((item) => {
-    return item.category === "electronics";
+    return (item.category === "men's clothing" || item.category === "women's clothing");
   });
 
   console.log(filProducts);
