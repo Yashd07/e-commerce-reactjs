@@ -9,7 +9,7 @@ import { CartContext } from '../contexts/CartContext';
 
 const Sidebar = () => {
 
-  console.log(useContext(CartContext));
+  //console.log(useContext(CartContext));
 
   const { isOpen, handleClose } = useContext(SidebarContext);
  
@@ -23,11 +23,11 @@ const Sidebar = () => {
     
    </div>
 
-  <div className='bg-pink-200 flex flex-col gap-y-3 py-3 mt-4'>
-
    <div>{cart.map((item)=>{
     return <CartItem item={item} key={item.id}/>
    })}</div>
+  <div className='bg-pink-200 flex flex-col gap-y-3 py-3 mt-4'>
+
    <div className='flex w-full justify-between items-center'>
     <div className='uppercase font-semibold'>
       <span>Total:</span>$ 1000

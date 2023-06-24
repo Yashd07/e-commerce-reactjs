@@ -39,7 +39,7 @@ const CartItem = ({ item }) => {
             {/* amount */}
             <div className='h-full flex justify-center items-center px-2'>{amount}</div>
             {/* plus icon */}
-            <div onClick={increaseAmount} className='flex-1 h-full flex justify-center items-center cursor-pointer'><IoMdAdd/></div>
+            <div onClick={()=>increaseAmount(id)} className='flex-1 h-full flex justify-center items-center cursor-pointer'><IoMdAdd/></div>
           </div>
 
           {/* item price*/}
