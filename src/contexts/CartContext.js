@@ -44,8 +44,16 @@ const CartProvider= ({children}) => {
     setCart(newcart);
   }
 
+  const clearCart =()=>{
+    setCart([]);
+  }
+
+  const increaseAmount =(id) =>{
+    console.log( `amount is`)
+  }
+
   console.log(cart);
-  return (<CartContext.Provider value={{ cart, addToCart, removeFromCart }}>{children}</CartContext.Provider>);
+  return (<CartContext.Provider value={{ cart, addToCart, removeFromCart , clearCart, increaseAmount}}>{children}</CartContext.Provider>);
 };
 
 export default CartProvider;
