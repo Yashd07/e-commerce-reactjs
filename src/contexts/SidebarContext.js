@@ -1,6 +1,8 @@
 import React ,{useState, createContext}from 'react';
 export const SidebarContext =createContext();
 
+
+//==================to open and close the sidebar====================//
 const SidebarProvider = ({children}) => {
   const [isOpen,setisOpen] = useState(false);
 

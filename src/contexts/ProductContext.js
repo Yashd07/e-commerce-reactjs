@@ -8,6 +8,7 @@ export const ProductContext = createContext();
 const ProductProvider = ({children}) => {
   const [products, setProducts]= useState([]);
   useEffect(() => {
+    //=======================fetching the from fakestoreapi =======================//
     const fetchProducts = async ()=>{
       const response = await fetch('https://fakestoreapi.com/products');
       
